@@ -75,7 +75,25 @@ section{
 .two-column{
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
+}
 
+/* Two column layout for .two-column-layout */
+.two-column-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 24px 0;
+}
 
+.two-column-layout > div {
+  flex: 2;
+}
+
+.two-column-layout img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
 }
